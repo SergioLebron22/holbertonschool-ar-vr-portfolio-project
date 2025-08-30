@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/BaseMap.unity
     guid: 767a90a0b8b3f8f45aaab15c69ce414e
   - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: ff6a15c4d3b3e5244b317905e5f6be2f
+  - enabled: 1
     path: Assets/Scenes/AnomalyScene 1.unity
     guid: 399c14cd9a9ff874e9327194cbf77680
   - enabled: 1
