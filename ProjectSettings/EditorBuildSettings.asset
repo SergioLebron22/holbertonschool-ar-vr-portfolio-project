@@ -6,42 +6,51 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: a3487f0bf34ba714694e2a6bfed7f19f
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 7ca048d77c22d9b4ea9cd5dcd5787c98
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 5603849bde17a034b8d4de58cc845435
+  - enabled: 0
     path: Assets/Scenes/StartScene.unity
     guid: cb8c9c040caaa85498b7d5382590443b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BaseMap.unity
     guid: 767a90a0b8b3f8f45aaab15c69ce414e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WinScene.unity
     guid: ff6a15c4d3b3e5244b317905e5f6be2f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AnomalyScene 1.unity
     guid: 399c14cd9a9ff874e9327194cbf77680
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AnomalyScene 2.unity
     guid: b5d88c78479b32d48be063404865ef05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AnomalyScene 3.unity
     guid: 6a8c219ba14b15249b7a333da73e0041
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AnomalyScene 4.unity
     guid: 14c0c51c993d0f247913b7cda9230c0f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AnomalyScene 5.unity
     guid: c87adbb28252f2b4ab922e1a36806310
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AnomalyScene 6.unity
     guid: be034d1f522830b4e887731d4fc6a395
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AnomalyScene 7.unity
     guid: feaed5b125ac69f49aa3c7987904c907
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AnomalyScene 8.unity
     guid: 8353d85ff71a51340a646a969b7d79c9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AnomalyScene 9.unity
     guid: 9b3018df391eeda4bbf69a7707f311cc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AnomalyScene 10.unity
     guid: 44600399a1147aa4f8c8e81790ae75da
   m_configObjects:
