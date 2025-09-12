@@ -5,18 +5,6 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
-    // private static GameManager _instance;
-
-    // void Awake()
-    // {
-    //     if (_instance != null && _instance != this)
-    //     {
-    //         Destroy(gameObject);
-    //         return;
-    //     }
-    //     _instance = this;
-    //     DontDestroyOnLoad(gameObject);
-    // }
 
     enum MapType
     {
@@ -43,57 +31,6 @@ public class LevelManager : MonoBehaviour
 
     public Text scoreText;
 
-    // void OnEnable()
-    // {
-    //     SceneManager.sceneLoaded += OnSceneLoaded;
-    // }
-
-    // void OnDisable()
-    // {
-    //     SceneManager.sceneLoaded -= OnSceneLoaded;
-    // }
-
-    // private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    // {
-    //     GameObject scoreObj = GameObject.FindWithTag("ScoreText");
-    //     if (scoreObj != null)
-    //     {
-    //         scoreText = scoreObj.GetComponent<Text>();
-    //         UpdateScoreText();
-    //     }
-
-    //     GameObject startObj = GameObject.FindWithTag("StartButton");
-    //     if (startObj != null)
-    //     {
-    //         startButton = startObj.GetComponent<Button>();
-    //         startButton.onClick.RemoveAllListeners();
-    //         startButton.onClick.AddListener(LoadNextMap);
-    //     }
-
-    //     GameObject yesObj = GameObject.FindWithTag("YesButton");
-    //     if (yesObj != null)
-    //     {
-    //         yesButton = yesObj.GetComponent<Button>();
-    //         yesButton.onClick.RemoveAllListeners();
-    //         yesButton.onClick.AddListener(YesButton);
-    //     }
-
-    //     GameObject noObj = GameObject.FindWithTag("NoButton");
-    //     if (noObj != null)
-    //     {
-    //         noButton = noObj.GetComponent<Button>();
-    //         noButton.onClick.RemoveAllListeners();
-    //         noButton.onClick.AddListener(NoButton);
-    //     }
-
-    //     GameObject backObj = GameObject.FindWithTag("BackButton");
-    //     if (backObj != null)
-    //     {
-    //         backButton = backObj.GetComponent<Button>();
-    //         backButton.onClick.RemoveAllListeners();
-    //         backButton.onClick.AddListener(BackButton);
-    //     }
-    // }
 
     private static T ChooseRandomMapType<T>()
     {
@@ -111,7 +48,6 @@ public class LevelManager : MonoBehaviour
         }
 
         randomIndex = UnityEngine.Random.Range(0, anomalies.Length);
-        // string sceneToLoad = sceneNames[randomIndex];
         anomalies[randomIndex].SetActive(true);
     }
 
@@ -124,7 +60,6 @@ public class LevelManager : MonoBehaviour
 
         if (mapSelected == MapType.BaseMap)
         {
-            // SceneManager.LoadScene(1);
             anomalies[randomIndex].SetActive(false);
         }
         else if (mapSelected == MapType.AnomalyMap)
@@ -148,7 +83,6 @@ public class LevelManager : MonoBehaviour
         if (mapSelected != MapType.AnomalyMap)
         {
             ResetScore();
-            // SceneManager.LoadScene(0);
             LoadNextMap();
         }
         else
@@ -158,14 +92,12 @@ public class LevelManager : MonoBehaviour
             UpdateScoreText();
             if (CheckWinCondition() == true)
             {
-                // SceneManager.LoadScene(2);
                 if (level == 1)
                 {
                     SceneManager.LoadScene("Level2");
                 }
                 else if (level == 2)
                 {
-                    //send to level 3
                     SceneManager.LoadScene("Level3");
                 }
                 else
@@ -184,7 +116,6 @@ public class LevelManager : MonoBehaviour
         if (mapSelected != MapType.BaseMap)
         {
             ResetScore();
-            // SceneManager.LoadScene(0);
             LoadNextMap();
         }
         else
@@ -194,15 +125,12 @@ public class LevelManager : MonoBehaviour
             UpdateScoreText();
             if (CheckWinCondition() == true)
             {
-                // SceneManager.LoadScene(2);
                 if (level == 1)
                 {
-                    //send to level 2
                     SceneManager.LoadScene("Level2");
                 }
                 else if (level == 2)
                 {
-                    //send to level 3
                     SceneManager.LoadScene("Level3");
                 }
                 else
